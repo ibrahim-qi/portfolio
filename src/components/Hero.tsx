@@ -61,12 +61,9 @@ const Hero = () => {
         transition={{ duration: 0.5, delay: 0.4 }}
       >
         <p className="text-[var(--slate)] max-w-lg mb-12">
-          I&apos;m a Software Engineering student specialising in building full-stack applications.
-          Currently, I&apos;m focused on building accessible, human-centered products at{" "}
-          <a href="https://www.headstarter.org" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
-            Headstarter
-          </a>
-          .
+          I&apos;m a Software Engineering student passionate about building scalable full-stack applications.
+          Currently seeking graduate software engineering roles starting from July 2025, with a focus on creating
+          innovative solutions that make a real impact.
         </p>
       </motion.div>
 
