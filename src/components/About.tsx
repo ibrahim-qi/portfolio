@@ -4,14 +4,12 @@ import { motion } from "framer-motion";
 
 const About = () => {
   const skills = [
-    "Python (5 years)",
-    "SQL (3 years)",
-    "Java",
+    "Python",
+    "SQL",
+    "TypeScript",
     "Flask",
-    "MySQL",
     "Next.js",
     "Tailwind CSS",
-    "Machine Learning"
   ];
 
   return (
@@ -31,9 +29,8 @@ const About = () => {
           <p>
             Hello! I&apos;m Ibrahim, a BSc Software Engineering for Business student at the{" "}
             <a href="https://www.uwe.ac.uk" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
-              University of the West of England, Bristol
+              University of the West of England, Bristol.
             </a>
-            . My passion lies in building scalable full-stack applications.
           </p>
           <p>
             As a Software Engineering Fellow at{" "}
@@ -56,9 +53,10 @@ const About = () => {
             {" "}and developing full-stack applications.
           </p>
           <p>
-            Here are some technologies I work with:
+            Here are some technologies I have been working with:
           </p>
         </div>
+
 
         <ul className="grid grid-cols-2 gap-2 text-sm">
           {skills.map((skill) => (

@@ -61,9 +61,8 @@ const Hero = () => {
         transition={{ duration: 0.5, delay: 0.4 }}
       >
         <p className="text-[var(--slate)] max-w-lg mb-12">
-          I&apos;m a Software Engineering student passionate about building scalable full-stack applications.
-          Currently seeking graduate software engineering roles starting from July 2025, with a focus on creating
-          innovative solutions that make a real impact.
+          I&apos;m a Software Engineering student passionate about building scalable and innovative full-stack applications
+          that make a real impact.
         </p>
       </motion.div>
 

@@ -9,7 +9,7 @@ const Projects = () => {
       title: "Personal Portfolio",
       description: (
         <>
-          A modern, responsive portfolio website built with{" "}
+          A responsive portfolio website built with{" "}
           <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
             Next.js
           </a>
