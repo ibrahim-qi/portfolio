@@ -1,8 +1,29 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 const Hero = () => {
+  const [text, setText] = useState("");
+  const [showCursor, setShowCursor] = useState(true);
+  const fullText = "Ibrahim Qureshi.";
+
+  useEffect(() => {
+    if (text.length < fullText.length) {
+      const timeout = setTimeout(() => {
+        setText(fullText.slice(0, text.length + 1));
+      }, 100);
+      return () => clearTimeout(timeout);
+    }
+  }, [text]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowCursor(prev => !prev);
+    }, 530);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="min-h-screen flex flex-col justify-center pt-16 sm:pt-28">
       <motion.div
@@ -19,7 +40,8 @@ const Hero = () => {
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-[var(--lightest-slate)] mb-2 sm:mb-4">
-          Ibrahim Qureshi.
+          {text}
+          <span className={`${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-75`}>|</span>
         </h2>
       </motion.div>
 
@@ -39,7 +61,7 @@ const Hero = () => {
         transition={{ duration: 0.5, delay: 0.4 }}
       >
         <p className="text-[var(--slate)] max-w-lg mb-12">
-          I&apos;m a Software Engineering student specializing in building full-stack applications.
+          I&apos;m a Software Engineering student specialising in building full-stack applications.
           Currently, I&apos;m focused on building accessible, human-centered products at{" "}
           <a href="https://www.headstarter.org" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
             Headstarter
