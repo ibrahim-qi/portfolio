@@ -68,7 +68,7 @@ const Projects = () => {
         viewport={{ once: true }}
       >
         <h2 className="flex items-center gap-2 text-[var(--lightest-slate)] text-2xl sm:text-3xl font-bold mb-12">
-          <span className="text-[var(--green)]">04.</span> Some Things I've Built
+          <span className="text-[var(--green)]">04.</span> Some Things I&apos;ve Built
         </h2>
 
         <div className="space-y-24">
