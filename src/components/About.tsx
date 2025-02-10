@@ -29,7 +29,7 @@ const About = () => {
 
         <div className="space-y-4 text-[var(--slate)] mb-12">
           <p>
-            Hello! I&apos;m Ibrahim, a Software Engineering for Business student at the{" "}
+            Hello! I&apos;m Ibrahim, a BSc Software Engineering for Business student at the{" "}
             <a href="https://www.uwe.ac.uk" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
               University of the West of England, Bristol
             </a>
@@ -54,10 +54,6 @@ const About = () => {
               Python
             </a>
             {" "}and developing full-stack applications.
-          </p>
-          <p>
-            When I&apos;m not coding, you&apos;ll find me diving deep into FX and Futures Trading, 
-            working towards my goal of becoming a high-level proprietary firm trader.
           </p>
           <p>
             Here are some technologies I work with:

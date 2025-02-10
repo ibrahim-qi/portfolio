@@ -12,7 +12,7 @@ const Contact = () => {
         viewport={{ once: true }}
         className="max-w-3xl mx-auto text-center"
       >
-        <p className="font-mono text-[var(--green)] text-sm mb-4">05. What&apos;s Next?</p>
+        <p className="font-mono text-[var(--green)] text-sm mb-4">04. What&apos;s Next?</p>
         <h2 className="text-4xl sm:text-5xl font-bold text-[var(--lightest-slate)] mb-6">
           Get In Touch
         </h2>

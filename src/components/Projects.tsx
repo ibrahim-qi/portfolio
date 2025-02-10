@@ -6,6 +6,34 @@ import { FiGithub, FiExternalLink } from "react-icons/fi";
 const Projects = () => {
   const projects = [
     {
+      title: "Personal Portfolio",
+      description: (
+        <>
+          A modern, responsive portfolio website built with{" "}
+          <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
+            Next.js
+          </a>
+          {" "}and{" "}
+          <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
+            Tailwind CSS
+          </a>
+          . Features smooth animations using{" "}
+          <a href="https://www.framer.com/motion/" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
+            Framer Motion
+          </a>
+          , responsive design, and a clean, modern UI. Deployed and hosted on{" "}
+          <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
+            Netlify
+          </a>
+          .
+        </>
+      ),
+      tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      github: "https://github.com/ibrahim-qi/portfolio",
+      external: "#",
+      image: "/portfolio.jpg",
+    },
+    {
       title: "SimpleStudy",
       description: (
         <>
@@ -68,7 +96,7 @@ const Projects = () => {
         viewport={{ once: true }}
       >
         <h2 className="flex items-center gap-2 text-[var(--lightest-slate)] text-2xl sm:text-3xl font-bold mb-12">
-          <span className="text-[var(--green)]">04.</span> Some Things I&apos;ve Built
+          <span className="text-[var(--green)]">03.</span> Some Things I&apos;ve Built
         </h2>
 
         <div className="space-y-24">
