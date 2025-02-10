@@ -38,16 +38,13 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.4 }}
       >
-        <p className="max-w-lg text-[var(--slate)] mb-8 text-base sm:text-lg">
-          I'm a Software Engineering student at{" "}
-          <a href="https://www.uwe.ac.uk" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
-            UWE Bristol
+        <p className="text-[var(--slate)] max-w-lg mb-12">
+          I&apos;m a Software Engineering student specializing in building full-stack applications.
+          Currently, I&apos;m focused on building accessible, human-centered products at{" "}
+          <a href="https://www.headstarter.org" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
+            Headstarter
           </a>
-          , graduating in July 2025 and actively seeking graduate software engineering roles. With 5 years of{" "}
-          <a href="https://www.python.org" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
-            Python
-          </a>
-          {" "}experience and a focus on full-stack development, I specialize in building scalable web applications with robust backend systems.
+          .
         </p>
       </motion.div>
 

@@ -115,7 +115,9 @@ const Projects = () => {
                     </a>
                   </h3>
                   <div className="py-5 px-6 bg-[var(--light-navy)] rounded-lg shadow-lg mb-4">
-                    <p className="text-[var(--slate)]">{project.description}</p>
+                    <p className="text-[var(--slate)] mb-4">
+                      A web application that leverages Python&apos;s Flask framework and SQLite database to manage user authentication.
+                    </p>
                   </div>
                   <ul className={`flex flex-wrap gap-3 text-xs font-mono text-[var(--slate)] mb-4 ${
                     i % 2 === 0 ? "" : "md:justify-end"

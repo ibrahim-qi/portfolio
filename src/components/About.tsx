@@ -29,7 +29,7 @@ const About = () => {
 
         <div className="space-y-4 text-[var(--slate)] mb-12">
           <p>
-            Hello! I'm Ibrahim, a Software Engineering for Business student at the{" "}
+            Hello! I&apos;m Ibrahim, a Software Engineering for Business student at the{" "}
             <a href="https://www.uwe.ac.uk" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
               University of the West of England, Bristol
             </a>
@@ -40,8 +40,8 @@ const About = () => {
             <a href="https://www.headstarter.org" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
               Headstarter
             </a>
-            {" "}and a Teaching Assistant, I've had the opportunity to work on diverse projects while helping others learn programming. 
-            I've built multiple web applications using{" "}
+            {" "}and a Teaching Assistant, I&apos;ve had the opportunity to work on diverse projects while helping others learn programming. 
+            I&apos;ve built multiple web applications using{" "}
             <a href="https://flask.palletsprojects.com/" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
               Flask
             </a>
@@ -56,7 +56,7 @@ const About = () => {
             {" "}and developing full-stack applications.
           </p>
           <p>
-            When I'm not coding, you'll find me diving deep into FX and Futures Trading, 
+            When I&apos;m not coding, you&apos;ll find me diving deep into FX and Futures Trading, 
             working towards my goal of becoming a high-level proprietary firm trader.
           </p>
           <p>

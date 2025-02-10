@@ -111,6 +111,9 @@ const Experience = () => {
                     </motion.li>
                   ))}
                 </ul>
+                <p className="text-[var(--slate)] mb-4">
+                  Developed and maintained web applications using Python&apos;s Flask framework and SQLite database.
+                </p>
               </motion.div>
             </AnimatePresence>
           </div>

@@ -17,9 +17,9 @@ const Contact = () => {
           Get In Touch
         </h2>
         <p className="text-[var(--slate)] mb-12 max-w-lg mx-auto">
-          I'm currently looking for graduate software engineering opportunities starting from July 2025. 
+          I&apos;m currently looking for graduate software engineering opportunities starting from July 2025. 
           Whether you have a position available, a question about my work, or just want to say hi, 
-          my inbox is always open and I'll do my best to respond!
+          my inbox is always open and I&apos;ll do my best to respond!
         </p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
