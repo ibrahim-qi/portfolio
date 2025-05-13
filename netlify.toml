@@ -1,3 +1,5 @@
+# In PORTFOLIO's netlify.toml (ibrahimqi.com)
+
 [build]
   command = "npm run build"
   publish = ".next"
@@ -5,9 +7,18 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# ONLY this rule for /macro-logger for now
+# Rule to enforce trailing slash for /macro-logger specifically.
+# This runs first for the exact path /macro-logger.
+[[redirects]]
+  from = "/macro-logger"    # Matches ONLY if there's no trailing slash
+  to = "/macro-logger/"    # Adds the trailing slash
+  status = 301               # Permanent redirect
+  force = true               # Ensure this rule is processed
+
+# Proxy rule: This will now handle requests that already have the trailing slash,
+# or any sub-paths.
 [[redirects]]
   from = "/macro-logger/*"
   to = "https://macrologger.netlify.app/macro-logger/:splat"
   status = 200
-  force = true # Make sure this is active for the proxy
+  force = true
