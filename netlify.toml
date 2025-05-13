@@ -6,7 +6,13 @@
   package = "@netlify/plugin-nextjs" 
 
 [[redirects]]
-      from = "/macro-logger/*"  # When someone visits ibrahimqi.com/macro-logger/...
-      to = "https://macrologger.netlify.app/macro-logger/:splat" # Fetch from your deployed app
-      status = 200             # This makes it a rewrite (proxy)
-      force = true             # Ensures this rule is applied
+  from = "/macro-logger"    # Matches ONLY if there's no trailing slash
+  to = "/macro-logger/"    # Adds the trailing slash
+  status = 301               # Permanent redirect (good for SEO)
+  force = true
+
+[[redirects]]
+  from = "/macro-logger/*"
+  to = "https://macrologger.netlify.app/macro-logger/:splat" # Or your actual logger app URL
+  status = 200
+  force = true
