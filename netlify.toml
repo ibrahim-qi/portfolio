@@ -4,3 +4,9 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs" 
+
+[[redirects]]
+      from = "/macro-logger/*"  # When someone visits ibrahimqi.com/macro-logger/...
+      to = "https://macrologger.netlify.app/macro-logger/:splat" # Fetch from your deployed app
+      status = 200             # This makes it a rewrite (proxy)
+      force = true             # Ensures this rule is applied
