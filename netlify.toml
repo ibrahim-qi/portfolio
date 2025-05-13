@@ -1,13 +1,19 @@
 # In PORTFOLIO's netlify.toml (ibrahimqi.com)
-
 [build]
   command = "npm run build"
   publish = ".next"
 
 [[plugins]]
-  package = "@netlify/plugin-nextjs" 
+  package = "@netlify/plugin-nextjs"
 
-# ONLY this rule for /macro-logger for now
+# Rule 1: Add trailing slash to /macro-logger
+[[redirects]]
+  from = "/macro-logger"
+  to = "/macro-logger/"
+  status = 301
+  force = true
+
+# Rule 2: Proxy /macro-logger/*
 [[redirects]]
   from = "/macro-logger/*"
   to = "https://macrologger.netlify.app/macro-logger/:splat"
