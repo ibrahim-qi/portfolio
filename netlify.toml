@@ -6,14 +6,14 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# Rule 1: Add trailing slash to /macro-logger
+# Proxy for /macro-logger (exact path)
 [[redirects]]
   from = "/macro-logger"
-  to = "/macro-logger/"
-  status = 301
+  to = "https://macrologger.netlify.app/macro-logger"
+  status = 200
   force = true
 
-# Rule 2: Proxy /macro-logger/*
+# Proxy for /macro-logger/* (subpaths)
 [[redirects]]
   from = "/macro-logger/*"
   to = "https://macrologger.netlify.app/macro-logger/:splat"
