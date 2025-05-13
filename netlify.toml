@@ -5,20 +5,9 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# Rule to enforce trailing slash for the /macro-logger base.
-# This ensures that if someone types /macro-logger without a slash,
-# they get the slash, which then allows the proxy rule below to work cleanly.
-[[redirects]]
-  from = "/macro-logger"
-  to = "/macro-logger/"
-  status = 301 # Permanent redirect
-  # force = true # Let's try WITHOUT force here first, it can be aggressive
-
-# Proxy rule: This should handle all requests for /macro-logger/ and its subpaths.
-# The :splat will capture anything after /macro-logger/
+# ONLY this rule for /macro-logger for now
 [[redirects]]
   from = "/macro-logger/*"
   to = "https://macrologger.netlify.app/macro-logger/:splat"
-  status = 200 # This makes it a rewrite (proxy)
-  # force = true # Also try without force here, the plugin might handle precedence.
-                 # If it doesn't work without force, we can add it back.
+  status = 200
+  force = true # Make sure this is active for the proxy
