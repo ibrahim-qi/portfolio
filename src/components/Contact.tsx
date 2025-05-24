@@ -17,9 +17,7 @@ const Contact = () => {
           Get In Touch
         </h2>
         <p className="text-[var(--slate)] mb-12 max-w-lg mx-auto">
-          I&apos;m currently looking for graduate software engineering opportunities starting from July 2025. 
-          Whether you have a position available, a question about my work, or just want to say hi, 
-          my inbox is always open and I&apos;ll do my best to respond!
+          I have recently graduated with a BSc in Software Engineering and am actively seeking full-time opportunities in Data Analysis, Data Engineering, or related software roles where I can apply my analytical abilities and grow my expertise in the data domain. My inbox is always open if you have a position available, a question, or just want to connect!
         </p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

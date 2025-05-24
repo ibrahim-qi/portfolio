@@ -45,14 +45,10 @@ const Projects = () => {
           <a href="https://www.python.org" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
             Python
           </a>
-          {" "}with{" "}
-          <a href="https://www.sqlite.org/" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
-            SQLite
-          </a>
-          {" "}DB and encrypted password storage. Interviewed 15 A-Level students who tested the application and received positive feedback. Awarded 65 out of 75 points for the NEA in A-Level Computer Science.
+          {" "}with a database and encrypted password storage. Interviewed 15 A-Level students who tested the application and received positive feedback. Awarded 65 out of 75 points for the NEA in A-Level Computer Science.
         </>
       ),
-      tech: ["Python", "Flask", "SQLite", "Encryption", "UI Design"],
+      tech: ["Python", "Flask", "Database Design", "Encryption", "UI Design"],
       github: "https://github.com/ibrahim-qi/SimpleStudy",
       external: "#",
       image: "/project1.jpg",
@@ -73,14 +69,10 @@ const Projects = () => {
           <a href="https://socket.io/" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
             Socket.io
           </a>
-          {" "}for real-time communication and{" "}
-          <a href="https://www.sqlite.org/" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
-            SQLite
-          </a>
-          {" "}DB. Awarded 80% for an IT module and presented to the Head of IT services at UWE.
+          {" "}for real-time communication and a database. Awarded 80% for an IT module and presented to the Head of IT services at UWE.
         </>
       ),
-      tech: ["Python", "Flask", "Socket.io", "SQLite", "Real-time Communication"],
+      tech: ["Python", "Flask", "Socket.io", "Database Management", "Real-time Communication"],
       github: "https://github.com/ibrahim-qi/Digital-Check-In",
       external: "#",
       image: "/project2.jpg",

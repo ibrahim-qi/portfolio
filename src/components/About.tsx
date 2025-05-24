@@ -27,30 +27,26 @@ const About = () => {
 
         <div className="space-y-4 text-[var(--slate)] mb-12">
           <p>
-            Hello! I&apos;m Ibrahim, a BSc Software Engineering for Business student at the{" "}
+            Hello! I&apos;m Ibrahim, a recent BSc Software Engineering for Business graduate from the{" "}
             <a href="https://www.uwe.ac.uk" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
               University of the West of England, Bristol.
             </a>
           </p>
           <p>
-            As a Software Engineering Fellow at{" "}
+            My experience as a Software Engineering Fellow at{" "}
             <a href="https://www.headstarter.org" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
               Headstarter
             </a>
-            {" "}and a Teaching Assistant, I&apos;ve had the opportunity to work on diverse projects while helping others learn programming. 
-            I&apos;ve built multiple web applications using{" "}
+            {" "}and a Teaching Assistant involved working on diverse projects and honing my problem-solving abilities. 
+            While I have a strong background in full-stack development with{" "}
             <a href="https://flask.palletsprojects.com/" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
               Flask
-            </a>
-            {" "}and{" "}
-            <a href="https://www.sqlite.org/" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
-              SQLite
             </a>
             , and I particularly enjoy working with{" "}
             <a href="https://www.python.org" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
               Python
             </a>
-            {" "}and developing full-stack applications.
+            , I am now focusing my career path on Data Analysis and Data Engineering. I am passionate about using data to drive decisions and create value.
           </p>
           <p>
             Here are some technologies I have been working with:
@@ -73,6 +69,9 @@ const About = () => {
             </motion.li>
           ))}
         </ul>
+        <p className="text-[var(--slate)] text-sm mt-4">
+          Actively developing skills in data analysis tools and libraries.
+        </p>
       </motion.div>
     </section>
   );
