@@ -1,6 +1,21 @@
+# In PORTFOLIO's netlify.toml (ibrahimqi.com)
 [build]
   command = "npm run build"
   publish = ".next"
 
 [[plugins]]
-  package = "@netlify/plugin-nextjs" 
+  package = "@netlify/plugin-nextjs"
+
+# Proxy for /macro-logger (exact path)
+[[redirects]]
+  from = "/macro-logger"
+  to = "https://macrologger.netlify.app/macro-logger"
+  status = 200
+  force = true
+
+# Proxy for /macro-logger/* (subpaths)
+[[redirects]]
+  from = "/macro-logger/*"
+  to = "https://macrologger.netlify.app/macro-logger/:splat"
+  status = 200
+  force = true 
