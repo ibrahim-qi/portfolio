@@ -51,7 +51,7 @@ const Hero = () => {
         transition={{ duration: 0.5, delay: 0.3 }}
       >
         <h3 className="text-3xl sm:text-5xl md:text-6xl font-bold text-[var(--slate)] mb-6">
-          I build software that matters.
+          I build cross-platform mobile apps.
         </h3>
       </motion.div>
 
@@ -61,7 +61,7 @@ const Hero = () => {
         transition={{ duration: 0.5, delay: 0.4 }}
       >
         <p className="text-[var(--slate)] max-w-lg mb-12">
-          I&apos;m a recent Software Engineering graduate, passionate about leveraging my technical skills to build impactful applications and extract meaningful insights from data. I am actively seeking opportunities in Data Analysis and Data Engineering.
+          I&apos;m a UK-based Software Engineering graduate, passionate about building modern, scalable mobile applications with React Native. I specialize in cross-platform development and am actively seeking opportunities in mobile app development.
         </p>
       </motion.div>
 

@@ -26,7 +26,7 @@ const SocialLinks = () => {
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/ibrahim-qi"
+              href="https://www.linkedin.com/in/ibrahim-qi/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[var(--light-slate)] hover:text-[var(--green)] hover:-translate-y-1 transition-all duration-200 block"
@@ -74,7 +74,7 @@ const SocialLinks = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <a
-                href="https://www.linkedin.com/in/ibrahim-qi"
+                href="https://www.linkedin.com/in/ibrahim-qi/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[var(--light-slate)] hover:text-[var(--green)] transition-colors duration-200 block"

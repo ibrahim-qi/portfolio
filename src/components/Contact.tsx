@@ -17,7 +17,7 @@ const Contact = () => {
           Get In Touch
         </h2>
         <p className="text-[var(--slate)] mb-12 max-w-lg mx-auto">
-          I have recently graduated with a BSc in Software Engineering and am actively seeking full-time opportunities in Data Analysis, Data Engineering, or related software roles where I can apply my analytical abilities and grow my expertise in the data domain. My inbox is always open if you have a position available, a question, or just want to connect!
+          I&apos;m graduating July 23rd with a BSc in Software Engineering and am actively seeking full-time opportunities in React Native development, cross-platform mobile development, or frontend engineering roles where I can apply my mobile development expertise and continue growing in the React Native ecosystem. My inbox is always open if you have a position available, a question, or just want to connect!
         </p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

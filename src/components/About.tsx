@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 
 const About = () => {
   const skills = [
-    "Python",
-    "SQL",
+    "React Native",
     "TypeScript",
-    "Flask",
-    "Next.js",
-    "Tailwind CSS",
+    "Expo",
+    "Firebase",
+    "Node.js",
+    "REST APIs",
   ];
 
   return (
@@ -27,32 +27,37 @@ const About = () => {
 
         <div className="space-y-4 text-[var(--slate)] mb-12">
           <p>
-            Hello! I&apos;m Ibrahim, a recent BSc Software Engineering for Business graduate from the{" "}
+            Hello! I&apos;m Ibrahim, graduating July 23rd with a BSc in Software Engineering for Business from the{" "}
             <a href="https://www.uwe.ac.uk" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
               University of the West of England, Bristol.
             </a>
           </p>
           <p>
-            My experience as a Software Engineering Fellow at{" "}
+            My journey has led me to specialize in{" "}
+            <a href="https://reactnative.dev" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
+              React Native
+            </a>
+            {" "}development, where I focus on building scalable, cross-platform mobile applications. My experience as a Software Engineering Fellow at{" "}
             <a href="https://www.headstarter.org" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
               Headstarter
             </a>
-            {" "}and a Teaching Assistant involved working on diverse projects and honing my problem-solving abilities. 
-            While I have a strong background in full-stack development with{" "}
-            <a href="https://flask.palletsprojects.com/" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
-              Flask
-            </a>
-            , and I particularly enjoy working with{" "}
-            <a href="https://www.python.org" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
-              Python
-            </a>
-            , I am now focusing my career path on Data Analysis and Data Engineering. I am passionate about using data to drive decisions and create value.
+            {" "}and a Teaching Assistant has strengthened my problem-solving abilities and technical foundation.
           </p>
           <p>
-            Here are some technologies I have been working with:
+            I&apos;m passionate about creating mobile experiences that work seamlessly across platforms, implementing features like offline storage, push notifications, and smooth animations. I particularly enjoy working with{" "}
+            <a href="https://expo.dev" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
+              Expo
+            </a>
+            {" "}and{" "}
+            <a href="https://firebase.google.com" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
+              Firebase
+            </a>
+            {" "}to build full-stack mobile solutions.
+          </p>
+          <p>
+            Here are the main technologies I work with:
           </p>
         </div>
-
 
         <ul className="grid grid-cols-2 gap-2 text-sm">
           {skills.map((skill) => (
@@ -70,7 +75,7 @@ const About = () => {
           ))}
         </ul>
         <p className="text-[var(--slate)] text-sm mt-4">
-          Actively developing skills in data analysis tools and libraries.
+          Always exploring new mobile development patterns and React Native libraries.
         </p>
       </motion.div>
     </section>

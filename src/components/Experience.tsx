@@ -17,10 +17,11 @@ const Experience = () => {
       title: "BSc Software Engineering for Business",
       date: "September 2022 - July 2025",
       points: [
-        "Currently pursuing a degree in Software Engineering with a focus on business applications and system development",
+        "Graduating July 23rd, 2025 with a degree in Software Engineering with a focus on business applications and mobile development",
+        "Specialized in cross-platform mobile development with React Native, building scalable applications with modern development practices",
         "Completed advanced coursework in Object-oriented Systems Development, Data Structures and Algorithms, and Advanced Databases",
         "Developed strong foundation through modules in Computing Fundamentals, Data Schemas and Applications, and Information Systems Project Development",
-        "Maintaining strong academic performance while actively participating in coding projects and technical workshops",
+        "Maintained strong academic performance while actively building React Native projects and contributing to mobile development communities",
       ],
     },
     {
@@ -31,6 +32,7 @@ const Experience = () => {
         "Assisted in teaching foundational programming concepts, including variables, loops, functions, and debugging techniques in Python",
         "Supported 20+ students in coding lab sessions by providing hands-on guidance and troubleshooting code",
         "Collaborated with teachers to design coding exercises, deepening my own technical expertise in programming and mentoring",
+        "Developed communication skills that translate well to explaining complex technical concepts in mobile development",
       ],
     },
     {
@@ -38,8 +40,10 @@ const Experience = () => {
       title: "Software Engineering Fellow",
       date: "July 2024 - August 2024",
       points: [
-        "Built 14+ machine learning, ai-engineering and full-stack projects in fast-paced software team environments",
+        "Built 14+ machine learning, AI-engineering and full-stack projects in fast-paced software team environments",
+        "Developed mobile-first solutions and cross-platform applications using React Native and modern JavaScript frameworks",
         "Coached by engineers from leading tech companies including Google Machine Learning, Google Kubernetes, Two Sigma, Tesla, Figma and Citadel",
+        "Gained valuable experience in agile development methodologies and collaborative coding practices",
       ],
     },
   ];

@@ -4,21 +4,21 @@ import { motion } from "framer-motion";
 
 const Skills = () => {
   const mainSkills = [
-    { name: "Python", years: 5, link: "https://www.python.org" },
-    { name: "Flask", years: 3, link: "https://flask.palletsprojects.com" },
-    { name: "SQL", years: 3, link: "https://www.sqlite.org" },
-    { name: "JavaScript", years: 2, link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
-    { name: "React/Next.js", years: 1, link: "https://nextjs.org" },
-    { name: "Java", years: 1, link: "https://www.java.com" }
+    { name: "React Native", years: 2, link: "https://reactnative.dev" },
+    { name: "TypeScript", years: 3, link: "https://www.typescriptlang.org" },
+    { name: "Expo", years: 2, link: "https://expo.dev" },
+    { name: "Firebase", years: 2, link: "https://firebase.google.com" },
+    { name: "Node.js", years: 2, link: "https://nodejs.org" },
+    { name: "React/Next.js", years: 2, link: "https://nextjs.org" }
   ];
 
   const otherTech = [
-    { name: "Git", link: "https://git-scm.com" },
-    { name: "RESTful APIs", link: "https://restfulapi.net" },
-    { name: "Socket.io", link: "https://socket.io" },
-    { name: "UI Design", link: "https://www.figma.com" },
-    { name: "Tailwind CSS", link: "https://tailwindcss.com" },
-    { name: "Data Structures", link: "https://www.geeksforgeeks.org/data-structures" }
+    { name: "REST APIs", link: "https://restfulapi.net" },
+    { name: "Push Notifications", link: "https://docs.expo.dev/push-notifications/overview/" },
+    { name: "Offline Storage", link: "https://docs.expo.dev/versions/latest/sdk/sqlite/" },
+    { name: "Animations", link: "https://docs.expo.dev/versions/latest/sdk/reanimated/" },
+    { name: "Supabase", link: "https://supabase.com" },
+    { name: "Git", link: "https://git-scm.com" }
   ];
 
   return (

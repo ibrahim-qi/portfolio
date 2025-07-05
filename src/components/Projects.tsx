@@ -6,6 +6,50 @@ import { FiGithub, FiExternalLink } from "react-icons/fi";
 const Projects = () => {
   const projects = [
     {
+      title: "Macro Logger",
+      description: (
+        <>
+          A comprehensive nutrition tracking mobile app built with{" "}
+          <a href="https://reactnative.dev" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
+            React Native
+          </a>
+          {" "}and{" "}
+          <a href="https://expo.dev" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
+            Expo
+          </a>
+          . Features include barcode scanning, offline storage, macro calculations, and progress tracking. Implements{" "}
+          <a href="https://firebase.google.com" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
+            Firebase
+          </a>
+          {" "}for real-time data sync and user authentication across both iOS and Android platforms.
+        </>
+      ),
+      tech: ["React Native", "Expo", "TypeScript", "Firebase", "Async Storage", "Expo Camera"],
+      github: "https://github.com/ibrahim-qi/macro-logger",
+      external: "#",
+      image: "/macro-logger.jpg",
+    },
+    {
+      title: "InvestEd",
+      description: (
+        <>
+          An investment learning platform built with{" "}
+          <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
+            Next.js
+          </a>
+          {" "}and{" "}
+          <a href="https://supabase.com" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
+            Supabase
+          </a>
+          . Features interactive learning modules, progress tracking, and user authentication. Designed with a mobile-first approach and responsive design principles to ensure accessibility across all devices.
+        </>
+      ),
+      tech: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "PostgreSQL", "Authentication"],
+      github: "https://github.com/ibrahim-qi/invested",
+      external: "#",
+      image: "/invested.jpg",
+    },
+    {
       title: "Personal Portfolio",
       description: (
         <>
@@ -21,16 +65,12 @@ const Projects = () => {
           <a href="https://www.framer.com/motion/" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
             Framer Motion
           </a>
-          , responsive design, and a clean, modern UI. Deployed and hosted on{" "}
-          <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
-            Netlify
-          </a>
-          .
+          , responsive design, and a clean, modern UI. Showcases my mobile development work and technical expertise.
         </>
       ),
       tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
       github: "https://github.com/ibrahim-qi/portfolio",
-      external: "#",
+      external: "https://www.ibrahimqi.com",
       image: "/portfolio.jpg",
     },
     {
