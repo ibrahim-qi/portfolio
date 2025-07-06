@@ -17,11 +17,11 @@ const Experience = () => {
       title: "BSc Software Engineering for Business",
       date: "September 2022 - July 2025",
       points: [
-        "Graduating July 23rd, 2025 with a degree in Software Engineering with a focus on business applications and mobile development",
-        "Specialized in cross-platform mobile development with React Native, building scalable applications with modern development practices",
-        "Completed advanced coursework in Object-oriented Systems Development, Data Structures and Algorithms, and Advanced Databases",
-        "Developed strong foundation through modules in Computing Fundamentals, Data Schemas and Applications, and Information Systems Project Development",
-        "Maintained strong academic performance while actively building React Native projects and contributing to mobile development communities",
+        "Graduating July 23rd, 2025 with a degree in Software Engineering with a focus on business applications and cross-platform mobile development",
+        "Specialized in modern development practices including component-based architecture, state management, and responsive design principles essential for React Native",
+        "Completed advanced coursework in Object-oriented Systems Development, Data Structures and Algorithms, and Advanced Databases - core knowledge for mobile app development",
+        "Developed strong foundation in TypeScript, JavaScript, and modern frameworks through modules in Computing Fundamentals and Information Systems Project Development",
+        "Built multiple full-stack projects including PWAs, gaining experience with mobile-first design patterns and offline-capable applications",
       ],
     },
     {
@@ -29,10 +29,11 @@ const Experience = () => {
       title: "Teaching Assistant",
       date: "September 2023 - September 2024",
       points: [
-        "Assisted in teaching foundational programming concepts, including variables, loops, functions, and debugging techniques in Python",
-        "Supported 20+ students in coding lab sessions by providing hands-on guidance and troubleshooting code",
-        "Collaborated with teachers to design coding exercises, deepening my own technical expertise in programming and mentoring",
-        "Developed communication skills that translate well to explaining complex technical concepts in mobile development",
+        "Provided instructional support to teachers and students, developing strong communication skills essential for collaborating with cross-functional teams in mobile development",
+        "Supported 20+ students with diverse learning needs, building empathy and user-focused thinking crucial for creating intuitive mobile user experiences",
+        "Maintained classroom order and adapted to changing situations, developing problem-solving abilities and flexibility valuable in fast-paced development environments",
+        "Assisted with administrative tasks and student progress tracking, gaining experience with data management and user progress monitoring similar to mobile app analytics",
+        "Developed patience and clear communication skills through explaining complex concepts, translating directly to documenting code and mentoring junior developers",
       ],
     },
     {
@@ -40,10 +41,11 @@ const Experience = () => {
       title: "Software Engineering Fellow",
       date: "July 2024 - August 2024",
       points: [
-        "Built 14+ machine learning, AI-engineering and full-stack projects in fast-paced software team environments",
-        "Developed mobile-first solutions and cross-platform applications using React Native and modern JavaScript frameworks",
-        "Coached by engineers from leading tech companies including Google Machine Learning, Google Kubernetes, Two Sigma, Tesla, Figma and Citadel",
-        "Gained valuable experience in agile development methodologies and collaborative coding practices",
+        "Completed intensive 2-week sprint program building 5+ AI-powered and full-stack projects, gaining experience with React fundamentals that transfer directly to React Native",
+        "Mentored by senior engineers from Google, Meta, Amazon, and other top tech companies, learning industry best practices for component architecture and state management",
+        "Developed projects using modern tech stack including React, Node.js, Python, and AI/ML frameworks - building the JavaScript and React foundation essential for React Native",
+        "Participated in Career Capital scoring system (0-100) measuring technical skills, collaboration, and professional growth, demonstrating readiness for mobile development roles",
+        "Gained exposure to startup environment and agile development methodologies commonly used in mobile app development teams and React Native projects",
       ],
     },
   ];
