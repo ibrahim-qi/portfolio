@@ -17,7 +17,7 @@ const Contact = () => {
           Get In Touch
         </h2>
         <p className="text-[var(--slate)] mb-12 max-w-lg mx-auto">
-          I&apos;m graduating July 23rd with a BSc in Software Engineering and am actively seeking full-time opportunities in React Native development, cross-platform mobile development, or frontend engineering roles where I can apply my mobile development expertise and continue growing in the React Native ecosystem. My inbox is always open if you have a position available, a question, or just want to connect!
+          I&apos;m graduating July 2025 with a BSc in Software Engineering and am actively seeking React Native developer opportunities. Whether you&apos;re looking for an intern, junior developer, or someone passionate about cross-platform mobile development, I&apos;d love to contribute to your team! My inbox is always open for opportunities, questions, or just to connect.
         </p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

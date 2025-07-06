@@ -3,22 +3,38 @@
 import { motion } from "framer-motion";
 
 const Skills = () => {
-  const mainSkills = [
-    { name: "React Native", years: 2, link: "https://reactnative.dev" },
+  const coreSkills = [
+    { name: "React", years: 2, link: "https://reactjs.org" },
     { name: "TypeScript", years: 3, link: "https://www.typescriptlang.org" },
-    { name: "Expo", years: 2, link: "https://expo.dev" },
-    { name: "Firebase", years: 2, link: "https://firebase.google.com" },
+    { name: "Next.js", years: 2, link: "https://nextjs.org" },
+    { name: "Supabase", years: 1, link: "https://supabase.com" },
     { name: "Node.js", years: 2, link: "https://nodejs.org" },
-    { name: "React/Next.js", years: 2, link: "https://nextjs.org" }
+    { name: "PostgreSQL", years: 1, link: "https://postgresql.org" }
   ];
 
-  const otherTech = [
-    { name: "REST APIs", link: "https://restfulapi.net" },
+  const learningSkills = [
+    { name: "React Native", link: "https://reactnative.dev" },
+    { name: "Expo", link: "https://expo.dev" },
+    { name: "Redux Toolkit", link: "https://redux-toolkit.js.org" },
+    { name: "React Navigation", link: "https://reactnavigation.org" },
+    { name: "Mobile Development", link: "https://developer.android.com" },
+    { name: "iOS Development", link: "https://developer.apple.com" }
+  ];
+
+  const devOpsSkills = [
+    { name: "Git & GitHub", link: "https://git-scm.com" },
+    { name: "GitHub Actions", link: "https://github.com/features/actions" },
+    { name: "PWA Development", link: "https://web.dev/progressive-web-apps/" },
+    { name: "Responsive Design", link: "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" }
+  ];
+
+  const advancedSkills = [
+    { name: "React Native Reanimated", link: "https://docs.swmansion.com/react-native-reanimated/" },
     { name: "Push Notifications", link: "https://docs.expo.dev/push-notifications/overview/" },
     { name: "Offline Storage", link: "https://docs.expo.dev/versions/latest/sdk/sqlite/" },
-    { name: "Animations", link: "https://docs.expo.dev/versions/latest/sdk/reanimated/" },
-    { name: "Supabase", link: "https://supabase.com" },
-    { name: "Git", link: "https://git-scm.com" }
+    { name: "Performance Optimization", link: "https://reactnative.dev/docs/performance" },
+    { name: "Jest & Testing Library", link: "https://jestjs.io" },
+    { name: "REST APIs", link: "https://restfulapi.net" }
   ];
 
   return (
@@ -34,39 +50,44 @@ const Skills = () => {
           <span className="text-[var(--green)]">02.</span> Skills
         </h2>
 
-        <div className="space-y-8">
-          <div className="grid grid-cols-2 gap-4">
-            {mainSkills.map((skill, index) => (
-              <motion.div
-                key={skill.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="flex items-center gap-2"
-              >
-                <span className="text-[var(--green)]">▹</span>
-                <a
-                  href={skill.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[var(--lightest-slate)] hover:text-[var(--green)] transition-colors duration-200"
+        <div className="space-y-12">
+          {/* Core Web Development Skills */}
+          <div>
+            <h3 className="text-[var(--lightest-slate)] text-lg font-semibold mb-4">Core Web Development</h3>
+            <div className="grid grid-cols-2 gap-4">
+              {coreSkills.map((skill, index) => (
+                <motion.div
+                  key={skill.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="flex items-center gap-2"
                 >
-                  {skill.name}
-                </a>
-                <span className="text-[var(--slate)] font-mono text-sm">
-                  ({skill.years} {skill.years === 1 ? "year" : "years"})
-                </span>
-              </motion.div>
-            ))}
+                  <span className="text-[var(--green)]">▹</span>
+                  <a
+                    href={skill.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--lightest-slate)] hover:text-[var(--green)] transition-colors duration-200"
+                  >
+                    {skill.name}
+                  </a>
+                  <span className="text-[var(--slate)] font-mono text-sm">
+                    ({skill.years} {skill.years === 1 ? "year" : "years"})
+                  </span>
+                </motion.div>
+              ))}
+            </div>
           </div>
 
-          <div className="mt-12">
-            <p className="text-[var(--slate)] mb-4">Other technologies I work with:</p>
+          {/* Learning React Native */}
+          <div>
+            <h3 className="text-[var(--lightest-slate)] text-lg font-semibold mb-4">Currently Learning (React Native Focus)</h3>
             <div className="grid grid-cols-2 gap-4">
-              {otherTech.map((tech, index) => (
+              {learningSkills.map((skill, index) => (
                 <motion.div
-                  key={tech.name}
+                  key={skill.name}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -75,12 +96,67 @@ const Skills = () => {
                 >
                   <span className="text-[var(--green)]">▹</span>
                   <a
-                    href={tech.link}
+                    href={skill.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[var(--slate)] hover:text-[var(--green)] transition-colors duration-200"
                   >
-                    {tech.name}
+                    {skill.name}
+                  </a>
+                  <span className="text-[var(--green)] font-mono text-xs ml-2">Learning</span>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          {/* Tools & Workflow */}
+          <div>
+            <h3 className="text-[var(--lightest-slate)] text-lg font-semibold mb-4">Tools & Workflow</h3>
+            <div className="grid grid-cols-2 gap-4">
+              {devOpsSkills.map((skill, index) => (
+                <motion.div
+                  key={skill.name}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="flex items-center gap-2"
+                >
+                  <span className="text-[var(--green)]">▹</span>
+                  <a
+                    href={skill.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--slate)] hover:text-[var(--green)] transition-colors duration-200"
+                  >
+                    {skill.name}
+                  </a>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          {/* Advanced Features */}
+          <div>
+            <h3 className="text-[var(--lightest-slate)] text-lg font-semibold mb-4">Advanced Mobile Features</h3>
+            <div className="grid grid-cols-2 gap-4">
+              {advancedSkills.map((skill, index) => (
+                <motion.div
+                  key={skill.name}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="flex items-center gap-2"
+                >
+                  <span className="text-[var(--green)]">▹</span>
+                  <a
+                    href={skill.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--slate)] hover:text-[var(--green)] transition-colors duration-200"
+                  >
+                    {skill.name}
                   </a>
                 </motion.div>
               ))}

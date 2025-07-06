@@ -9,24 +9,24 @@ const Projects = () => {
       title: "Macro Logger",
       description: (
         <>
-          A comprehensive nutrition tracking mobile app built with{" "}
-          <a href="https://reactnative.dev" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
-            React Native
+          A comprehensive nutrition tracking Progressive Web App (PWA) built with{" "}
+          <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
+            React
           </a>
           {" "}and{" "}
-          <a href="https://expo.dev" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
-            Expo
+          <a href="https://www.typescriptlang.org" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
+            TypeScript
           </a>
-          . Features include barcode scanning, offline storage, macro calculations, and progress tracking. Implements{" "}
-          <a href="https://firebase.google.com" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
-            Firebase
+          . Features user authentication, real-time data sync, and offline storage using{" "}
+          <a href="https://supabase.com" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
+            Supabase
           </a>
-          {" "}for real-time data sync and user authentication across both iOS and Android platforms.
+          . Implements React Router for navigation, responsive mobile-first design, and modern state management patterns that demonstrate solid foundation for transitioning to React Native development.
         </>
       ),
-      tech: ["React Native", "Expo", "TypeScript", "Firebase", "Async Storage", "Expo Camera"],
-      github: "https://github.com/ibrahim-qi/macro-logger",
-      external: "#",
+      tech: ["React", "TypeScript", "PWA", "Supabase", "React Router", "Responsive Design", "Authentication"],
+      github: "https://github.com/ibrahim-qi/macro-logger-app",
+      external: "https://ibrahimqi.com/macro-logger",
       image: "/macro-logger.jpg",
     },
     {
@@ -41,14 +41,14 @@ const Projects = () => {
           <a href="https://supabase.com" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
             Supabase
           </a>
-          . Demonstrates strong{" "}
+          . Demonstrates enterprise-level{" "}
           <a href="https://www.typescriptlang.org" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
             TypeScript
           </a>
-          {" "}skills essential for React Native development. Features interactive learning modules, progress tracking, and user authentication with mobile-first responsive design principles.
+          {" "}patterns and API integration skills essential for React Native development. Features responsive design, authentication flows, and PostgreSQL database management with CI/CD deployment pipeline.
         </>
       ),
-      tech: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "PostgreSQL", "Authentication"],
+      tech: ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "Authentication", "CI/CD", "REST APIs"],
       github: "https://github.com/ibrahim-qi/invested",
       external: "#",
       image: "/invested.jpg",
@@ -57,7 +57,7 @@ const Projects = () => {
       title: "Personal Portfolio",
       description: (
         <>
-          A responsive portfolio website built with{" "}
+          A modern portfolio website built with{" "}
           <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
             Next.js
           </a>
@@ -65,18 +65,14 @@ const Projects = () => {
           <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
             Tailwind CSS
           </a>
-          . Showcases advanced{" "}
-          <a href="https://www.typescriptlang.org" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
-            TypeScript
-          </a>
-          {" "}and{" "}
+          . Showcases advanced animation techniques with Framer Motion, responsive design principles, and professional{" "}
           <a href="https://git-scm.com" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
             Git
           </a>
-          {" "}workflow skills that directly transfer to React Native development. Features smooth animations and modern UI patterns applicable to mobile development.
+          {" "}workflow practices. Demonstrates UI/UX skills and development best practices directly applicable to mobile development.
         </>
       ),
-      tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Git"],
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Responsive Design", "Git"],
       github: "https://github.com/ibrahim-qi/portfolio",
       external: "https://www.ibrahimqi.com",
       image: "/portfolio.jpg",
