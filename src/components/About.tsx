@@ -77,24 +77,6 @@ const About = () => {
         <p className="text-[var(--slate)] text-sm mt-4">
           Always exploring new mobile development patterns and React Native libraries.
         </p>
-
-        <div className="mt-8">
-          <h3 className="text-[var(--lightest-slate)] text-lg font-semibold mb-4">My React Native Journey</h3>
-          <div className="space-y-3">
-            <div className="flex items-center gap-3">
-              <span className="text-[var(--green)] text-xs">2023</span>
-              <span className="text-[var(--slate)] text-sm">Started with JavaScript and React fundamentals</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <span className="text-[var(--green)] text-xs">2024</span>
-              <span className="text-[var(--slate)] text-sm">Dove into React Native, built Macro Logger with Expo and Firebase</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <span className="text-[var(--green)] text-xs">2025</span>
-              <span className="text-[var(--slate)] text-sm">Graduating with focus on cross-platform mobile development and TypeScript</span>
-            </div>
-          </div>
-        </div>
       </motion.div>
     </section>
   );

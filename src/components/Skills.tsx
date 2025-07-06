@@ -16,16 +16,9 @@ const Skills = () => {
     { name: "REST APIs", link: "https://restfulapi.net" },
     { name: "Push Notifications", link: "https://docs.expo.dev/push-notifications/overview/" },
     { name: "Offline Storage", link: "https://docs.expo.dev/versions/latest/sdk/sqlite/" },
-    { name: "Animations (Reanimated)", link: "https://docs.expo.dev/versions/latest/sdk/reanimated/" },
+    { name: "Animations", link: "https://docs.expo.dev/versions/latest/sdk/reanimated/" },
     { name: "Supabase", link: "https://supabase.com" },
-    { name: "Git & GitHub", link: "https://git-scm.com" }
-  ];
-
-  const emergingSkills = [
-    { name: "New Architecture (Fabric)", link: "https://reactnative.dev/docs/the-new-architecture/landing-page" },
-    { name: "TurboModules", link: "https://reactnative.dev/docs/the-new-architecture/turbomodules" },
-    { name: "Hermes Engine", link: "https://hermesengine.dev" },
-    { name: "EAS Build & Submit", link: "https://docs.expo.dev/build/introduction/" }
+    { name: "Git", link: "https://git-scm.com" }
   ];
 
   return (
@@ -88,32 +81,6 @@ const Skills = () => {
                     className="text-[var(--slate)] hover:text-[var(--green)] transition-colors duration-200"
                   >
                     {tech.name}
-                  </a>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mt-12">
-            <p className="text-[var(--slate)] mb-4">Currently learning (2025 focus):</p>
-            <div className="grid grid-cols-2 gap-4">
-              {emergingSkills.map((skill, index) => (
-                <motion.div
-                  key={skill.name}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="flex items-center gap-2"
-                >
-                  <span className="text-[var(--green)]">▹</span>
-                  <a
-                    href={skill.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--slate)] hover:text-[var(--green)] transition-colors duration-200"
-                  >
-                    {skill.name}
                   </a>
                 </motion.div>
               ))}

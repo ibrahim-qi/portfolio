@@ -17,11 +17,11 @@ const Projects = () => {
           <a href="https://expo.dev" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
             Expo
           </a>
-          . Features include <strong>barcode scanning</strong>, <strong>offline storage</strong>, macro calculations, and progress tracking. Implements{" "}
+          . Features include barcode scanning, offline storage, macro calculations, and progress tracking. Implements{" "}
           <a href="https://firebase.google.com" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
             Firebase
           </a>
-          {" "}for real-time data sync and user authentication across both iOS and Android platforms. Achieves <strong>60FPS performance</strong> with optimized FlatList rendering for large food databases.
+          {" "}for real-time data sync and user authentication across both iOS and Android platforms.
         </>
       ),
       tech: ["React Native", "Expo", "TypeScript", "Firebase", "Async Storage", "Expo Camera"],
@@ -45,7 +45,7 @@ const Projects = () => {
           <a href="https://www.typescriptlang.org" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
             TypeScript
           </a>
-          {" "}skills essential for React Native development. Features <strong>interactive learning modules</strong>, progress tracking, and user authentication with <strong>mobile-first responsive design</strong> (95%+ mobile traffic optimization).
+          {" "}skills essential for React Native development. Features interactive learning modules, progress tracking, and user authentication with mobile-first responsive design principles.
         </>
       ),
       tech: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "PostgreSQL", "Authentication"],
@@ -73,7 +73,7 @@ const Projects = () => {
           <a href="https://git-scm.com" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
             Git
           </a>
-          {" "}workflow skills that directly transfer to React Native development. Features <strong>smooth animations</strong>, modern UI patterns, and <strong>100% accessibility compliance</strong> applicable to mobile development.
+          {" "}workflow skills that directly transfer to React Native development. Features smooth animations and modern UI patterns applicable to mobile development.
         </>
       ),
       tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Git"],

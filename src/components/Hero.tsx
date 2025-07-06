@@ -60,16 +60,9 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.4 }}
       >
-        <p className="text-[var(--slate)] max-w-lg mb-8">
+        <p className="text-[var(--slate)] max-w-lg mb-12">
           I&apos;m a UK-based Software Engineering graduate, passionate about building modern, scalable mobile applications with React Native. I specialize in cross-platform development and am actively seeking opportunities in mobile app development.
         </p>
-
-        <div className="flex items-center gap-2 mb-8">
-          <div className="w-2 h-2 bg-[var(--green)] rounded-full animate-pulse"></div>
-          <span className="text-[var(--green)] text-sm font-mono">
-            Graduating July 23rd • Available for Full-time Opportunities
-          </span>
-        </div>
       </motion.div>
 
       <motion.div

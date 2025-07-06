@@ -12,36 +12,13 @@ const Contact = () => {
         viewport={{ once: true }}
         className="max-w-3xl mx-auto text-center"
       >
-        <p className="font-mono text-[var(--green)] text-sm mb-4">05. What&apos;s Next?</p>
+        <p className="font-mono text-[var(--green)] text-sm mb-4">04. What&apos;s Next?</p>
         <h2 className="text-4xl sm:text-5xl font-bold text-[var(--lightest-slate)] mb-6">
-          Let&apos;s Build Something Amazing Together
+          Get In Touch
         </h2>
-        <p className="text-[var(--slate)] mb-8 max-w-lg mx-auto">
-          I&apos;m graduating July 23rd with a BSc in Software Engineering and am actively seeking <strong>full-time opportunities</strong>, <strong>internships</strong>, or <strong>freelance projects</strong> in React Native development, cross-platform mobile development, or frontend engineering roles. I&apos;m passionate about creating user-centric mobile experiences and would love to contribute to your team!
+        <p className="text-[var(--slate)] mb-12 max-w-lg mx-auto">
+          I&apos;m graduating July 23rd with a BSc in Software Engineering and am actively seeking full-time opportunities in React Native development, cross-platform mobile development, or frontend engineering roles where I can apply my mobile development expertise and continue growing in the React Native ecosystem. My inbox is always open if you have a position available, a question, or just want to connect!
         </p>
-
-        <div className="bg-[var(--light-navy)] rounded-lg p-6 mb-8 max-w-lg mx-auto">
-          <h3 className="text-[var(--lightest-slate)] font-semibold mb-3">What I&apos;m Looking For:</h3>
-          <ul className="text-[var(--slate)] text-sm space-y-2">
-            <li className="flex items-center gap-2">
-              <span className="text-[var(--green)]">▹</span>
-              React Native Developer roles (Junior to Mid-level)
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-[var(--green)]">▹</span>
-              Mobile app development internships
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-[var(--green)]">▹</span>
-              Freelance mobile development projects
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-[var(--green)]">▹</span>
-              Open source collaboration opportunities
-            </li>
-          </ul>
-        </div>
-
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
