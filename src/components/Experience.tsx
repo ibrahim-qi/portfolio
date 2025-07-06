@@ -62,7 +62,7 @@ const Experience = () => {
         className="max-w-3xl"
       >
         <h2 className="flex items-center gap-2 text-[var(--lightest-slate)] text-2xl sm:text-3xl font-bold mb-8">
-          <span className="text-[var(--green)]">02.</span> Where I&apos;ve Worked
+          <span className="text-[var(--green)]">03.</span> Where I&apos;ve Worked
         </h2>
 
         <div className="flex flex-col sm:flex-row gap-4">

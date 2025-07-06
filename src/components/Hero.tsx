@@ -61,13 +61,19 @@ const Hero = () => {
         transition={{ duration: 0.5, delay: 0.4 }}
       >
         <p className="text-[var(--slate)] max-w-lg mb-8">
-          I&apos;m a UK-based Software Engineering graduate (July 2025) with strong React and TypeScript foundations. I&apos;m passionate about mobile development and actively learning React Native to build cross-platform applications. My web development experience and PWA knowledge provide a solid foundation for transitioning to native mobile development.
+          I&apos;m a UK-based Software Engineering graduate (July 2025) with a strong React and TypeScript foundation. I&apos;m currently transitioning from web development to React Native mobile development, leveraging my PWA and full-stack experience to build cross-platform applications. My goal is to secure a junior React Native developer role where I can apply my React expertise to mobile development.
         </p>
         
-        <div className="flex items-center gap-2 mb-12">
+        <div className="flex items-center gap-2 mb-4">
           <div className="w-2 h-2 bg-[var(--green)] rounded-full animate-pulse"></div>
-          <span className="text-[var(--green)] text-sm font-mono">
-            Seeking React Native internships • Graduating July 2025
+          <span className="text-sm font-mono text-[var(--slate)]">
+            Actively learning React Native • Available July 2025
+          </span>
+        </div>
+        
+        <div className="flex items-center gap-2 mb-12">
+          <span className="text-sm font-mono text-[var(--slate)]">
+            Currently building: React Native version of Macro Logger
           </span>
         </div>
       </motion.div>

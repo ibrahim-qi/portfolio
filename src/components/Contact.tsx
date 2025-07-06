@@ -12,12 +12,12 @@ const Contact = () => {
         viewport={{ once: true }}
         className="max-w-3xl mx-auto text-center"
       >
-        <p className="font-mono text-[var(--green)] text-sm mb-4">04. What&apos;s Next?</p>
+        <p className="font-mono text-[var(--green)] text-sm mb-4">05. What&apos;s Next?</p>
         <h2 className="text-4xl sm:text-5xl font-bold text-[var(--lightest-slate)] mb-6">
           Get In Touch
         </h2>
         <p className="text-[var(--slate)] mb-12 max-w-lg mx-auto">
-          I&apos;m graduating July 2025 with a BSc in Software Engineering and am actively seeking React Native developer opportunities. Whether you&apos;re looking for an intern, junior developer, or someone passionate about cross-platform mobile development, I&apos;d love to contribute to your team! My inbox is always open for opportunities, questions, or just to connect.
+          I&apos;m graduating July 2025 with a BSc in Software Engineering and am actively transitioning from React web development to React Native mobile development. I&apos;m seeking junior React Native developer opportunities, internships, or mentorship roles where I can leverage my React expertise while learning mobile-specific technologies. My inbox is always open for opportunities, technical discussions, or connections in the React Native community!
         </p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
