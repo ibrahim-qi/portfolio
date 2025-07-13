@@ -13,7 +13,7 @@ const EmailLink = () => {
       <div className="flex flex-col items-center gap-6 after:block after:w-[1px] after:h-24 after:mx-auto after:bg-[var(--light-slate)]">
         <a
           href="mailto:ibrahim.qureshi@protonmail.com"
-          className="vertical-text text-[var(--light-slate)] hover:text-[var(--green)] hover:-translate-y-1 transition-all duration-200 font-mono text-xs tracking-widest"
+          className="vertical-text text-[var(--light-slate)] hover:text-[var(--green)] hover:-translate-y-1 transition-all duration-200 font-mono text-sm tracking-widest"
         >
           ibrahim.qureshi@protonmail.com
         </a>

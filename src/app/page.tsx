@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
@@ -21,7 +20,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Navigation />
-      <div className="px-6 md:px-12 lg:px-24 max-w-[1400px] mx-auto">
+      <div className="px-4 sm:px-6 md:px-12 lg:px-24 max-w-[1400px] mx-auto">
         <motion.div
           variants={fadeUpVariants}
           initial="hidden"
@@ -38,15 +37,6 @@ export default function Home() {
               transition={{ duration: 0.5 }}
             >
               <About />
-            </motion.div>
-            <motion.div
-              variants={fadeUpVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              <Skills />
             </motion.div>
             <motion.div
               variants={fadeUpVariants}

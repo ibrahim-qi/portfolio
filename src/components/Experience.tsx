@@ -1,27 +1,32 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Experience = () => {
-  const [mounted, setMounted] = useState(false);
   const [activeTab, setActiveTab] = useState(0);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   const experiences = [
     {
-      company: "UWE Bristol",
-      title: "BSc Software Engineering for Business",
-      date: "September 2022 - July 2025",
+      company: "Headstarter",
+      title: "Software Engineering Fellow",
+      date: "January 2025 - May 2025",
       points: [
-        "Graduating July 23rd, 2025 with a degree in Software Engineering with a focus on business applications and cross-platform mobile development",
-        "Specialized in modern development practices including component-based architecture, state management, and responsive design principles essential for React Native",
-        "Completed advanced coursework in Object-oriented Systems Development, Data Structures and Algorithms, and Advanced Databases - core knowledge for mobile app development",
-        "Developed strong foundation in TypeScript, JavaScript, and modern frameworks through modules in Computing Fundamentals and Information Systems Project Development",
-        "Built multiple full-stack projects including PWAs, gaining experience with mobile-first design patterns and offline-capable applications",
+        "Completed intensive 7-week fellowship program building 5+ AI-powered and full-stack projects using React fundamentals",
+        "Mentored by senior engineers from Google, Meta, Amazon, and other top tech companies, learning industry best practices",
+        "Developed projects using modern tech stack including React, Node.js, Python, and AI/ML frameworks",
+        "Participated in Career Capital scoring system measuring technical skills, collaboration, and professional growth",
+      ],
+    },
+    {
+      company: "Freelance",
+      title: "Full-Stack Developer",
+      date: "2023 - Present",
+      points: [
+        "Developed full-stack web applications using React, Next.js, and TypeScript with Supabase backend integration",
+        "Currently upskilling in React Native and Expo for cross-platform mobile development",
+        "Implemented responsive designs with Tailwind CSS and modern UI/UX principles for web and mobile",
+        "Delivered projects from concept to deployment with focus on performance and user experience across platforms",
       ],
     },
     {
@@ -29,28 +34,24 @@ const Experience = () => {
       title: "Teaching Assistant",
       date: "September 2023 - September 2024",
       points: [
-        "Provided instructional support to teachers and students, developing strong communication skills essential for collaborating with cross-functional teams in mobile development",
-        "Supported 20+ students with diverse learning needs, building empathy and user-focused thinking crucial for creating intuitive mobile user experiences",
-        "Maintained classroom order and adapted to changing situations, developing problem-solving abilities and flexibility valuable in fast-paced development environments",
-        "Assisted with administrative tasks and student progress tracking, gaining experience with data management and user progress monitoring similar to mobile app analytics",
-        "Developed patience and clear communication skills through explaining complex concepts, translating directly to documenting code and mentoring junior developers",
+        "Provided instructional support to teachers and students, developing strong communication skills for cross-functional collaboration",
+        "Supported 20+ students with diverse learning needs, building empathy and user-focused thinking crucial for UX design",
+        "Maintained classroom order and adapted to changing situations, developing problem-solving abilities valuable in development environments",
+        "Assisted with administrative tasks and student progress tracking, gaining experience with data management and user progress monitoring",
       ],
     },
     {
-      company: "Headstarter",
-      title: "Software Engineering Fellow",
-      date: "July 2024 - August 2024",
+      company: "UWE Bristol",
+      title: "BSc Software Engineering for Business",
+      date: "September 2022 - July 2025",
       points: [
-        "Completed intensive 2-week sprint program building 5+ AI-powered and full-stack projects, gaining experience with React fundamentals that transfer directly to React Native",
-        "Mentored by senior engineers from Google, Meta, Amazon, and other top tech companies, learning industry best practices for component architecture and state management",
-        "Developed projects using modern tech stack including React, Node.js, Python, and AI/ML frameworks - building the JavaScript and React foundation essential for React Native",
-        "Participated in Career Capital scoring system (0-100) measuring technical skills, collaboration, and professional growth, demonstrating readiness for mobile development roles",
-        "Gained exposure to startup environment and agile development methodologies commonly used in mobile app development teams and React Native projects",
+        "Expected to graduate July 23rd, 2025 with a Bachelor's degree in Software Engineering for Business, focusing on practical application of software engineering in commercial environments",
+        "Completed key modules including Advanced Topics in Web Development, Software Development Project, and Advanced Databases",
+        "Studied Design and Analysis of Data Structures & Algorithms, Development of Information Systems, and Data Schemas and Applications",
+        "Active member of UWE Islamic Society and UWE Move Basketball, developing leadership and teamwork skills alongside technical expertise",
       ],
     },
   ];
-
-  if (!mounted) return null;
 
   return (
     <section id="experience" className="py-20 sm:py-32">
@@ -59,10 +60,11 @@ const Experience = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
-        className="max-w-3xl"
+        className="max-w-6xl mx-auto"
       >
-        <h2 className="flex items-center gap-2 text-[var(--lightest-slate)] text-2xl sm:text-3xl font-bold mb-8">
-          <span className="text-[var(--green)]">03.</span> Where I&apos;ve Worked
+        <h2 className="flex items-center gap-2 text-[var(--lightest-slate)] text-xl sm:text-2xl font-bold mb-16">
+          <span className="text-[var(--green)]">02.</span> Where I&apos;ve Worked
+          <div className="flex-1 h-[1px] bg-[var(--lightest-navy)] ml-8"></div>
         </h2>
 
         <div className="flex flex-col sm:flex-row gap-4">
@@ -85,7 +87,7 @@ const Experience = () => {
           </div>
 
           {/* Content */}
-          <div className="py-2">
+          <div className="py-2 flex-1">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeTab}
@@ -110,7 +112,7 @@ const Experience = () => {
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.2, delay: i * 0.1 }}
-                      className="flex gap-2 text-[var(--slate)]"
+                      className="flex gap-2 text-[var(--slate)] leading-relaxed"
                     >
                       <span className="text-[var(--green)] flex-shrink-0">▹</span>
                       {point}

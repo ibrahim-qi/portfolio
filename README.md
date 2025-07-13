@@ -63,7 +63,7 @@ You can view the live version of my portfolio here: [https://ibrahimqi.com](http
 
 ## Author
 
-*   **Ibrahim Qureshi**
+*   **Ibrahim Qureshi**ExC
     *   GitHub: [@ibrahim-qi](https://github.com/ibrahim-qi)
     *   LinkedIn: [https://www.linkedin.com/in/ibrahim-qi/](https://www.linkedin.com/in/ibrahim-qi/)
     *   Email: ibrahim.qureshi@protonmail.com

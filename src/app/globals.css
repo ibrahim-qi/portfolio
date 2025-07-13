@@ -21,7 +21,7 @@
 
 @layer components {
   .nav-link {
-    @apply relative text-[var(--lightest-slate)] hover:text-[var(--green)] transition-colors duration-200;
+    @apply relative text-[var(--lightest-slate)] hover:text-[var(--green)] transition-colors duration-200 font-light;
   }
   
   .section-heading {

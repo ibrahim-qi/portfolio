@@ -15,7 +15,7 @@ const Hero = () => {
       }, 100);
       return () => clearTimeout(timeout);
     }
-  }, [text]);
+  }, [text, fullText]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -25,13 +25,13 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="min-h-screen flex flex-col justify-center pt-16 sm:pt-28">
+    <section className="min-h-screen flex flex-col justify-center pt-16 sm:pt-20">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}
       >
-        <h1 className="text-[var(--green)] font-mono text-sm mb-4">Hi, my name is</h1>
+        <h1 className="text-[var(--green)] font-mono text-sm mb-5">Hi, my name is</h1>
       </motion.div>
 
       <motion.div
@@ -39,7 +39,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-[var(--lightest-slate)] mb-2 sm:mb-4">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[var(--lightest-slate)] mb-3 leading-tight">
           {text}
           <span className={`${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-75`}>|</span>
         </h2>
@@ -50,7 +50,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
       >
-        <h3 className="text-3xl sm:text-5xl md:text-6xl font-bold text-[var(--slate)] mb-6">
+        <h3 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[var(--slate)] mb-6 leading-tight">
           I build cross-platform mobile apps.
         </h3>
       </motion.div>
@@ -60,42 +60,28 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.4 }}
       >
-        <p className="text-[var(--slate)] max-w-lg mb-8">
-          I&apos;m a UK-based Software Engineering graduate (July 2025) with a strong React and TypeScript foundation. I&apos;m currently transitioning from web development to React Native mobile development, leveraging my PWA and full-stack experience to build cross-platform applications. My goal is to secure a junior React Native developer role where I can apply my React expertise to mobile development.
+        <p className="text-[var(--slate)] max-w-md mb-12 leading-relaxed text-lg">
+          I&apos;m a Software Engineering student passionate about building modern web applications and cross-platform mobile apps. 
+          Based in Bristol, UK, I&apos;m currently seeking{" "}
+          <a href="https://www.linkedin.com/in/ibrahim-qi/" target="_blank" rel="noopener noreferrer" className="text-[var(--green)] hover:underline">
+            new opportunities
+          </a>{" "}
+          in web and mobile development.
         </p>
-        
-        <div className="flex items-center gap-2 mb-12">
-          <span className="text-sm font-mono text-[var(--slate)]">
-            Currently building: React Native version of Macro Logger
-          </span>
-        </div>
       </motion.div>
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="flex gap-4"
       >
         <a
-          href="#work"
-          className="group relative inline-block px-6 py-4 border border-[var(--green)] text-[var(--green)] 
-                   rounded overflow-hidden transition-colors duration-200 text-sm"
+          href="#projects"
+          className="inline-block px-7 py-4 border border-[var(--green)] text-[var(--green)] 
+                   hover:bg-[var(--green)] hover:bg-opacity-10 transition-all duration-200 
+                   text-sm font-mono"
         >
-          <span className="absolute inset-0 bg-[var(--green)] translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-200" />
-          <span className="relative group-hover:text-[var(--navy)] transition-colors duration-200">
-            Check out my work
-          </span>
-        </a>
-        <a
-          href="mailto:ibrahim.qureshi@protonmail.com"
-          className="group relative inline-block px-6 py-4 border border-[var(--green)] text-[var(--green)] 
-                   rounded overflow-hidden transition-colors duration-200 text-sm"
-        >
-          <span className="absolute inset-0 bg-[var(--green)] translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-200" />
-          <span className="relative group-hover:text-[var(--navy)] transition-colors duration-200">
-            Get in touch
-          </span>
+          Check out my work!
         </a>
       </motion.div>
     </section>

@@ -11,7 +11,7 @@ const Navigation = () => {
   const navItems = [
     { name: "About", href: "#about" },
     { name: "Experience", href: "#experience" },
-    { name: "Work", href: "#work" },
+    { name: "Work", href: "#projects" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -47,7 +47,7 @@ const Navigation = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="px-4 py-2 border border-[var(--green)] text-[var(--green)] rounded hover:bg-[var(--green)]/10 transition-colors duration-200 text-sm"
+            className="px-4 py-2 border border-[var(--green)] text-[var(--green)] hover:bg-[var(--green)]/10 transition-colors duration-200 text-sm font-mono"
           >
             Resume
           </motion.a>
@@ -101,7 +101,7 @@ const Navigation = () => {
                     href="/resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-6 py-2 border border-[var(--green)] text-[var(--green)] rounded hover:bg-[var(--green)]/10 transition-colors duration-200 text-base mt-4"
+                    className="px-6 py-2 border border-[var(--green)] text-[var(--green)] hover:bg-[var(--green)]/10 transition-colors duration-200 text-base font-mono mt-4"
                   >
                     Resume
                   </a>
