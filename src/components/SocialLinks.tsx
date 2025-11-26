@@ -4,106 +4,67 @@ import { motion } from "framer-motion";
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
 const SocialLinks = () => {
+  const socialLinks = [
+    { name: "GitHub", href: "https://github.com/ibrahim-qi", icon: FiGithub },
+    { name: "LinkedIn", href: "https://www.linkedin.com/in/ibrahim-qi/", icon: FiLinkedin },
+    { name: "Email", href: "mailto:ibrahim.qureshi@protonmail.com", icon: FiMail },
+  ];
+
   return (
     <>
       {/* Desktop fixed sidebar */}
       <motion.div 
-        className="fixed bottom-0 left-6 hidden lg:block"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 1 }}
+        className="fixed bottom-0 left-8 hidden lg:block z-40"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.4, delay: 1 }}
       >
-        <ul className="flex flex-col items-center gap-6 after:block after:w-[1px] after:h-24 after:mx-auto after:bg-[var(--light-slate)]">
-          <li>
-            <a
-              href="https://github.com/ibrahim-qi"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[var(--light-slate)] hover:text-[var(--green)] hover:-translate-y-1 transition-all duration-200 block"
-            >
-              <FiGithub size={22} />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/ibrahim-qi/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[var(--light-slate)] hover:text-[var(--green)] hover:-translate-y-1 transition-all duration-200 block"
-            >
-              <FiLinkedin size={22} />
-            </a>
-          </li>
-          <li>
-            <a
-              href="mailto:ibrahim.qureshi@protonmail.com"
-              className="text-[var(--light-slate)] hover:text-[var(--green)] hover:-translate-y-1 transition-all duration-200 block"
-            >
-              <FiMail size={22} />
-            </a>
-          </li>
+        <ul className="flex flex-col items-center gap-5">
+          {socialLinks.map((link) => (
+            <li key={link.name}>
+              <a
+                href={link.href}
+                target={link.name !== "Email" ? "_blank" : undefined}
+                rel={link.name !== "Email" ? "noopener noreferrer" : undefined}
+                className="block p-2 text-[var(--light-slate)] hover:text-[var(--green)] hover:-translate-y-1 transition-all duration-200"
+                aria-label={link.name}
+              >
+                <link.icon size={20} />
+              </a>
+            </li>
+          ))}
+          <li className="w-[1px] h-24 bg-[var(--light-slate)]" aria-hidden="true" />
         </ul>
       </motion.div>
 
-      {/* Mobile footer */}
-      <motion.div
-        className="lg:hidden py-8 mt-24"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+      {/* Footer */}
+      <footer 
+        className="py-8 text-center"
+        style={{ paddingBottom: "max(2rem, env(safe-area-inset-bottom))" }}
       >
-        <div className="container mx-auto px-6">
-          <ul className="flex items-center justify-center gap-8">
-            <motion.li
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-            >
+        {/* Mobile social icons */}
+        <ul className="flex items-center justify-center gap-6 mb-6 lg:hidden">
+          {socialLinks.map((link) => (
+            <li key={link.name}>
               <a
-                href="https://github.com/ibrahim-qi"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[var(--light-slate)] hover:text-[var(--green)] transition-colors duration-200 block"
+                href={link.href}
+                target={link.name !== "Email" ? "_blank" : undefined}
+                rel={link.name !== "Email" ? "noopener noreferrer" : undefined}
+                className="flex items-center justify-center w-11 h-11 text-[var(--light-slate)] active:text-[var(--green)] transition-colors"
+                aria-label={link.name}
               >
-                <FiGithub size={24} />
+                <link.icon size={20} />
               </a>
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <a
-                href="https://www.linkedin.com/in/ibrahim-qi/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[var(--light-slate)] hover:text-[var(--green)] transition-colors duration-200 block"
-              >
-                <FiLinkedin size={24} />
-              </a>
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
-              <a
-                href="mailto:ibrahim.qureshi@protonmail.com"
-                className="text-[var(--light-slate)] hover:text-[var(--green)] transition-colors duration-200 block"
-              >
-                <FiMail size={24} />
-              </a>
-            </motion.li>
-          </ul>
-          <div className="text-center mt-6">
-            <p className="text-[var(--slate)] text-sm">
-              Built with Next.js & Tailwind CSS
-            </p>
-          </div>
-        </div>
-      </motion.div>
+            </li>
+          ))}
+        </ul>
+        
+        <p className="text-[var(--slate)] text-xs font-mono">
+          Designed & Built by Ibrahim Qureshi
+        </p>
+      </footer>
     </>
   );
 };
 
-export default SocialLinks; 
+export default SocialLinks;

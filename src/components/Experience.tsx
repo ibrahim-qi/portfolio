@@ -8,77 +8,115 @@ const Experience = () => {
 
   const experiences = [
     {
+      company: "Freelance",
+      title: "Full Stack Developer",
+      date: "Dec 2024 - Present",
+      location: "Remote",
+      url: null,
+      points: [
+        "Developed a full-stack property listing platform using React/Next.js and Supabase, implementing Stripe payment processing, advanced search filters, and mobile-first responsive design",
+        "Delivered 15+ features across multiple client projects using Agile methodology, maintaining 100% on-time delivery rate while adapting to evolving requirements",
+        "Architected multi-step property listing workflows with real-time validation and PostgreSQL data models in Supabase",
+        "Built responsive search systems with location-based filtering and solved complex mobile viewport issues for seamless cross-device experience",
+      ],
+    },
+    {
       company: "Headstarter",
       title: "Software Engineering Fellow",
-      date: "January 2025 - May 2025",
+      date: "Jan - Mar 2025",
+      location: "Remote",
+      url: "https://headstarter.co",
       points: [
-        "Completed intensive 7-week fellowship program building 5+ AI-powered and full-stack projects using React fundamentals",
-        "Mentored by senior engineers from Google, Meta, Amazon, and other top tech companies, learning industry best practices",
-        "Developed projects using modern tech stack including React, Node.js, Python, and AI/ML frameworks",
-        "Participated in Career Capital scoring system measuring technical skills, collaboration, and professional growth",
+        "Contributed to 5 AI-integrated web apps in 7 weeks using Next.js, OpenAI API, and Pinecone vector database",
+        "Implemented RAG (Retrieval-Augmented Generation) pipelines to create custom AI customer support agents",
+        "Collaborated in agile teams to prototype and ship features under tight weekly deadlines",
+        "Refined model accuracy by preparing and labelling datasets using Pandas and Python",
       ],
     },
     {
-      company: "Freelance",
-      title: "Full-Stack Developer",
-      date: "2023 - Present",
+      company: "City Farm",
+      title: "Technology Consultant",
+      date: "Nov 2024 - Mar 2025",
+      location: "Bristol",
+      url: null,
       points: [
-        "Developed full-stack web applications using React, Next.js, and TypeScript with Supabase backend integration",
-        "Currently upskilling in React Native and Expo for cross-platform mobile development",
-        "Implemented responsive designs with Tailwind CSS and modern UI/UX principles for web and mobile",
-        "Delivered projects from concept to deployment with focus on performance and user experience across platforms",
+        "Conducted a digital audit of the organisation's tech stack, identifying inefficiencies and presenting a modernisation roadmap to stakeholders",
+        "Refactored legacy website elements into modular React components, improving maintainability and user experience",
+        "Collaborated in a 4-person Agile team to deliver technical documentation and strategic recommendations",
+        "Modernised the frontend architecture to support better marketing performance and consistent branding",
       ],
     },
     {
-      company: "Monarch Education",
+      company: "Monarch",
       title: "Teaching Assistant",
-      date: "September 2023 - September 2024",
+      date: "Sep 2023 - Sep 2024",
+      location: "Bristol",
+      url: null,
       points: [
-        "Provided instructional support to teachers and students, developing strong communication skills for cross-functional collaboration",
-        "Supported 20+ students with diverse learning needs, building empathy and user-focused thinking crucial for UX design",
-        "Maintained classroom order and adapted to changing situations, developing problem-solving abilities valuable in development environments",
-        "Assisted with administrative tasks and student progress tracking, gaining experience with data management and user progress monitoring",
+        "Supported teachers and 25+ students daily with classroom activities, resolving EdTech issues and maintaining organised learning environments",
+        "Developed communication and problem-solving skills through one-on-one student support, applicable to collaborative software development",
+        "Performed hardware troubleshooting to keep lessons running reliably and adapted quickly to changing situations",
       ],
     },
     {
       company: "UWE Bristol",
-      title: "BSc Software Engineering for Business",
-      date: "September 2022 - July 2025",
+      title: "BSc Software Engineering",
+      date: "2022 - 2025",
+      location: "Bristol",
+      url: "https://www.uwe.ac.uk",
       points: [
-        "Expected to graduate July 23rd, 2025 with a Bachelor's degree in Software Engineering for Business, focusing on practical application of software engineering in commercial environments",
-        "Completed key modules including Advanced Topics in Web Development, Software Development Project, and Advanced Databases",
-        "Studied Design and Analysis of Data Structures & Algorithms, Development of Information Systems, and Data Schemas and Applications",
-        "Active member of UWE Islamic Society and UWE Move Basketball, developing leadership and teamwork skills alongside technical expertise",
+        "Graduated with a 2:1 Bachelor's degree in Software Engineering for Business",
+        "Key Modules: Design and Analysis of Data Structures & Algorithms, Software Development Project, Advanced Databases, Object-Oriented Systems Development",
+        "Earned Google Cybersecurity Professional certification covering Linux and SQL",
       ],
     },
   ];
 
   return (
-    <section id="experience" className="py-20 sm:py-32">
+    <section id="experience" className="py-24 sm:py-32">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
         className="max-w-6xl mx-auto"
       >
-        <h2 className="flex items-center gap-2 text-[var(--lightest-slate)] text-xl sm:text-2xl font-bold mb-16">
-          <span className="text-[var(--green)]">02.</span> Where I&apos;ve Worked
-          <div className="flex-1 h-[1px] bg-[var(--lightest-navy)] ml-8"></div>
+        <h2 className="flex items-center gap-4 text-[var(--lightest-slate)] text-xl sm:text-2xl font-bold mb-10">
+          <span className="text-[var(--green)] font-mono text-lg">02.</span>
+          <span>Where I&apos;ve Worked</span>
+          <div className="flex-1 h-[1px] bg-[var(--lightest-navy)] ml-4" />
         </h2>
 
-        <div className="flex flex-col sm:flex-row gap-4">
-          {/* Tabs */}
-          <div className="flex sm:flex-col overflow-x-auto sm:overflow-x-visible border-b sm:border-b-0 sm:border-l border-[var(--lightest-navy)]">
+        <div className="flex flex-col md:flex-row gap-6">
+          {/* Mobile Tabs - Pill style with proper spacing */}
+          <div className="md:hidden -mx-6 px-6">
+            <div className="flex gap-3 overflow-x-auto pb-4 scrollbar-hide">
+              {experiences.map((exp, index) => (
+                <button
+                  key={exp.company}
+                  onClick={() => setActiveTab(index)}
+                  className={`px-4 py-2.5 text-sm font-mono whitespace-nowrap rounded-full transition-all duration-200 flex-shrink-0 border
+                    ${activeTab === index
+                      ? "text-[var(--green)] bg-[var(--green)]/10 border-[var(--green)]/40"
+                      : "text-[var(--slate)] bg-[var(--light-navy)] border-[var(--lightest-navy)] active:bg-[var(--lightest-navy)]"
+                    }`}
+                >
+                  {exp.company}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Desktop Tabs */}
+          <div className="hidden md:block relative border-l border-[var(--lightest-navy)]">
             {experiences.map((exp, index) => (
               <button
                 key={exp.company}
                 onClick={() => setActiveTab(index)}
-                className={`px-5 py-3 text-sm font-mono whitespace-nowrap transition-all duration-200
-                  ${
-                    activeTab === index
-                      ? "text-[var(--green)] bg-[var(--light-navy)] border-[var(--green)] sm:border-l-2 border-b-2 sm:border-b-0"
-                      : "text-[var(--slate)] hover:text-[var(--green)] hover:bg-[var(--light-navy)]"
+                className={`block w-full px-5 py-3 text-sm font-mono whitespace-nowrap text-left transition-colors duration-200
+                  ${activeTab === index
+                    ? "text-[var(--green)] bg-[var(--light-navy)] border-l-2 border-[var(--green)] -ml-[2px]"
+                    : "text-[var(--slate)] hover:text-[var(--green)] hover:bg-[var(--light-navy)]/50"
                   }`}
               >
                 {exp.company}
@@ -87,36 +125,44 @@ const Experience = () => {
           </div>
 
           {/* Content */}
-          <div className="py-2 flex-1">
+          <div className="flex-1 min-h-[320px] md:pl-4">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeTab}
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -20 }}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.2 }}
               >
-                <h3 className="text-xl text-[var(--lightest-slate)]">
-                  {experiences[activeTab].title}{" "}
+                <h3 className="text-lg sm:text-xl text-[var(--lightest-slate)] mb-1">
+                  {experiences[activeTab].title}
                   <span className="text-[var(--green)]">
-                    @ {experiences[activeTab].company}
+                    {" @ "}
+                    {experiences[activeTab].url ? (
+                      <a 
+                        href={experiences[activeTab].url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline underline-offset-4"
+                      >
+                        {experiences[activeTab].company}
+                      </a>
+                    ) : (
+                      experiences[activeTab].company
+                    )}
                   </span>
                 </h3>
-                <p className="text-sm font-mono text-[var(--slate)] mt-1 mb-4">
-                  {experiences[activeTab].date}
+                
+                <p className="text-sm font-mono text-[var(--slate)] mb-5">
+                  {experiences[activeTab].date} · {experiences[activeTab].location}
                 </p>
-                <ul className="space-y-4">
+                
+                <ul className="space-y-3">
                   {experiences[activeTab].points.map((point, i) => (
-                    <motion.li
-                      key={i}
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.2, delay: i * 0.1 }}
-                      className="flex gap-2 text-[var(--slate)] leading-relaxed"
-                    >
-                      <span className="text-[var(--green)] flex-shrink-0">▹</span>
-                      {point}
-                    </motion.li>
+                    <li key={i} className="flex gap-3 text-[var(--slate)] leading-relaxed">
+                      <span className="text-[var(--green)] flex-shrink-0 mt-1 text-xs">▹</span>
+                      <span className="text-sm">{point}</span>
+                    </li>
                   ))}
                 </ul>
               </motion.div>
@@ -128,4 +174,4 @@ const Experience = () => {
   );
 };
 
-export default Experience; 
+export default Experience;

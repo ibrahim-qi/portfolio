@@ -2,25 +2,18 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FiArrowUp } from "react-icons/fi";
+import { FiChevronUp } from "react-icons/fi";
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.pageYOffset > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+      setIsVisible(window.pageYOffset > 500);
     };
 
-    window.addEventListener("scroll", toggleVisibility);
-
-    return () => {
-      window.removeEventListener("scroll", toggleVisibility);
-    };
+    window.addEventListener("scroll", toggleVisibility, { passive: true });
+    return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
   const scrollToTop = () => {
@@ -34,18 +27,21 @@ const ScrollToTop = () => {
     <AnimatePresence>
       {isVisible && (
         <motion.button
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
+          exit={{ opacity: 0, y: 10 }}
+          transition={{ duration: 0.2 }}
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 p-3 rounded-full bg-[var(--light-navy)] text-[var(--green)] 
-                   hover:bg-[var(--lightest-navy)] transition-colors duration-200 z-50"
+          className="fixed bottom-6 right-5 sm:bottom-8 sm:right-8 p-3 bg-[var(--light-navy)] text-[var(--green)] border border-[var(--lightest-navy)]
+                   active:bg-[var(--lightest-navy)] lg:hover:border-[var(--green)]/50 transition-colors duration-200 z-50 rounded-sm shadow-lg"
+          style={{ marginBottom: "env(safe-area-inset-bottom)" }}
+          aria-label="Scroll to top"
         >
-          <FiArrowUp size={24} />
+          <FiChevronUp size={20} />
         </motion.button>
       )}
     </AnimatePresence>
   );
 };
 
-export default ScrollToTop; 
+export default ScrollToTop;
